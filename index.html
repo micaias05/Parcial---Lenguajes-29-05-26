@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Parcial</title>
+</head>
+
+<body>
+    <main id="contenedor_principal">
+        <form id="formulario">
+            <label for="nombre_apellido">Ingrese nombre y apellido:</label>
+            <input type="text" id="nombre_apellido" placeholder="Nombre y Apellido">
+            <span id="error_nombre" class="mensaje_error"></span>
+
+            <label for="dni">Ingrese DNI:</label>
+            <input type="number" id="dni" placeholder="DNI">
+            <span id="error_dni" class="mensaje_error"></span>
+            
+            <label for="fechnac">Ingrese Fecha de Nacimiento:</label>
+            <input type="date" id="fechnac" placeholder="Fecha de nacimiento">
+            <span id="error_fechnac" class="mensaje_error"></span>
+
+            <button id="btnEnviar" type="button">Enviar</button>
+            <span id="formulario_valido" class="mensaje_valido"></span>
+        </form>
+
+        <hr> <button type="button" id="btnPreguntas">Preguntas</button>
+        
+        <div id="resultados_preguntas" class="grilla_resultados mt-3"></div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
